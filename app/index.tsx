@@ -142,9 +142,9 @@ const Marketplace = () => {
             >
               {filter}
             </Text>
-            {filter === "Household" && <FontAwesome6 name="house-chimney" size={14} color="black" />}
-            {filter === "Clothing" && <FontAwesome5 name="tshirt" size={14} color="black" />}
-            {filter === "Garden" && <MaterialCommunityIcons name="flower" size={18} color="black" />}
+            {filter === "Household" && <FontAwesome6 name="house-chimney" size={14} color="white" />}
+            {filter === "Clothing" && <FontAwesome5 name="tshirt" size={14} color="white" />}
+            {filter === "Garden" && <MaterialCommunityIcons name="flower" size={18} color="white" />}
           </TouchableOpacity>
         ))}
       </View>
@@ -209,7 +209,7 @@ const styles = StyleSheet.create({
     paddingVertical: 8,
     paddingHorizontal: 12,
     borderRadius: 20,
-    backgroundColor: "#E0E0E0",
+    backgroundColor: "#000",
     flexDirection: "row",
     gap: 4,
     justifyContent: "center",
@@ -220,10 +220,11 @@ const styles = StyleSheet.create({
   },
   filterButtonText: {
     fontSize: 14,
-    color: "#333",
+    color: "#ffffff",
+    // fontWeight: "bold"
   },
   selectedFilterButtonText: {
-    color: "#fff",
+    color: "#ffffff",
     fontWeight: "bold",
   },
   grid: {
